@@ -542,6 +542,7 @@ var business={
     },
     //绑定人气值点击事件，personNumber初始化人数，number人数等级，element元素类
     bindPersonNumberClick:function(personNumber,number,element){
+            $(element).unbind();
             $(element).click(function(){
                 if(personNumber>=number){
                     if( $(element).attr("src")!="img/btn5-gary.png"){
@@ -571,6 +572,9 @@ var business={
         //初始化不显示
         for(var i=0;i<12;i++){
             $(".business-wrap-item-stream-radius"+(i+1)).css("display","none");
+        }
+        for(var i=0;i<12;i++){
+            $(".business-wrap-item-stream-radius"+(i+1)).css("width","auto");
         }
        //大于0,显示1
         if(personNumber>0){
@@ -621,7 +625,7 @@ var business={
 
             //宽度12%最大
             var wscale3=12;
-            if(personNumber<100000){
+            if(personNumber<660000){
             var scale3=parseFloat(personNumber/660000).toFixed(2);
             wscale3*=scale3;
             }
@@ -641,7 +645,7 @@ var business={
 
             //宽度7%最大
             var wscale4=7;
-            if(personNumber<100000){
+            if(personNumber<1000000){
             var scale4=parseFloat(personNumber/1000000).toFixed(2);
             wscale4*=scale4;
             }
@@ -673,9 +677,22 @@ business.initPersonNumber(760000);
 //business.initPersonNumber(112345678);
 
 //测试
-setInterval(function(){
-  //  business.initPersonNumber(parseInt(Math.random()*1000000));
-},1000)
+
+;(function()
+{
+var a=1;
+var interval=setInterval(function(){
+    a++;
+    console.log(a)
+    if(a<10){
+        business.personNumber=parseInt(Math.random()*1000000);
+    business.initPersonNumber(business.personNumber);
+    }else{
+        clearInterval(interval)
+    }
+},1000);
+}
+)();
 </script>
 
 </body>
