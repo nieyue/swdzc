@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+    content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<meta name="Copyright" content="Tencent" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="Tencent-CP" />
+	<meta name="Description" content="" />
+	<meta name="Keywords" content="" />
+    <title>兽王的专宠</title>
+    <style lang="style/css">
+    /**
+    **reset
+    */
+    html,body,div,span,img,a{
+        margin:0;
+        padding:0;
+        list-style: none;
+        font-size:16px;
+        /* font-size:62.5%; */
+    }
+    html,body{
+        background-color:#1f1d1e; 
+        font-family:"Microsoft YaHei";
+        font-size:16px;
+    }
+    
+    .font-resize{
+        font-size:1.5rem !important;
+        margin-top:-1rem;
+    }
+
+    @media screen and (max-width: 700px){
+        .font-resize{
+            font-size:2.4rem !important;
+            margin-top:-1.6rem;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .font-resize{
+            font-size:2.1rem !important;
+            margin-top:-1.4rem;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .font-resize{
+            font-size:1.8rem !important;
+            margin-top:-1.2rem;
+        }
+    }
+    @media screen and (max-width: 400px){
+        .font-resize{
+            font-size:1.5rem !important;
+            margin-top:-1rem;
+        }
+    }
+    /*
+  *背景
+  */
+  .bgwrap{
+        position: relative;
+        left:50%;
+        top:0;
+        margin-left:-320px;
+        width:640px; 
+    }
+    @media screen and (max-width:640px){
+    .bgwrap{
+        position: relative;
+        left:0;
+        top:0;
+        max-width:640px; 
+        margin-left:0;
+        width:100%;
+    }
+    }
+    .bgwrap .bgwrap-bgimg-wrap{
+        position:relative;
+        left:0;
+        top:0;
+        width:100%;
+        font-size:0 ;
+    }
+   
+    .bgwrap .bgwrap-bgimg-wrap .bgwrap-bgimg-wrap-img{
+        width:100%;
+    }
+    /**
+    **业务包裹
+    */
+    .business-wrap{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        font-size:0 ;
+        height: 100%;
+    }
+    /**
+    **上线三周年
+    */
+    .business-wrap-item-btn1{
+        position:absolute;
+        left:0;
+        top:20%;
+        text-align: center;
+        width: 100%;
+        height: 2%;
+    }
+    .btn1{
+        width:50%;
+        position:absolute;
+        left:25%;
+        top:0;
+    }
+    /**
+    **人气流
+    */
+    .business-wrap-item-stream{
+        position:absolute;
+        left:0;
+        top:30.7%;
+        text-align: center;
+        width: 100%;
+        height: 0.97%;
+    }
+    .business-wrap-item-stream-radius{
+        position:absolute;
+        left:0;
+        top:0;
+        width: auto;
+        height: 100%;
+        display: none
+    }
+    .business-wrap-item-stream-radius1{
+        left:21.2%;
+    }
+    .business-wrap-item-stream-radius2{
+        left:23.5%;
+        /* width:7%; */
+    }
+    .business-wrap-item-stream-radius3{
+        left:29.5%;
+    }
+    .business-wrap-item-stream-radius4{
+        left:36.8%;
+    }
+    .business-wrap-item-stream-radius5{
+        left:39%;
+        /* width:13%; */
+    }
+    .business-wrap-item-stream-radius6{
+        left:51%;
+    }
+    .business-wrap-item-stream-radius7{
+        left:58.6%;
+    }
+    .business-wrap-item-stream-radius8{
+        left:60.9%;
+        /* width:12%; */
+    }
+    .business-wrap-item-stream-radius9{
+        left:72%;
+    }
+    .business-wrap-item-stream-radius10{
+        left:79.6%;
+    }
+    .business-wrap-item-stream-radius11{
+        left:81.8%;
+        /* width:7%; */
+    }
+    .business-wrap-item-stream-radius12{
+        left:88.4%;
+    }
+    /**
+    **当前人气值
+    */
+    .business-wrap-item-gbg1{
+        position:absolute;
+        left:0;
+        top:35.3%;
+        text-align: center;
+        width: 100%;
+        height: 2%;
+    }
+    .gbg1{
+        width:50%;
+        position:absolute;
+        left:25%;
+        top:0;
+    }
+    /**
+    *人气值
+    */
+    .business-wrap-item-gbg1-wrap{
+        position:absolute;
+        left:52%;
+        top:35.3%;
+        text-align: center;
+        width: 33%;
+        height: 1.77%;
+        font-weight: bold;
+        color:red;
+    }
+    .business-wrap-item-gbg1-wrap-number{
+        display: inline-block;
+        height: 1.77%;
+        font-weight: bold;
+        color:red;
+        height: 100%;
+        position: absolute;
+        top:50%;
+        left:8%;
+    }
+    /**
+    **我也来助力
+    */
+    .business-wrap-item-btn2{
+        position:absolute;
+        left:1%;
+        top:37.95%;
+        width: 50%;
+        height: 3%;
+    }
+    .btn2{
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    /**
+    **邀请好友助力
+    */
+    .business-wrap-item-btn3{
+        position:absolute;
+        left:48%;
+        top:37.95%;
+        width: 50%;
+        height: 3%;
+    }
+    .btn3{
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+     /**
+    **倒计时
+    */
+    .business-wrap-item-num{
+        z-index:999999;
+        position:absolute;
+        left:0;
+        top:49.7%;
+        text-align: center;
+        width: 100%;
+        height: 2.1%;
+        overflow: hidden;
+    }
+    .business-wrap-item-num1{
+        position:absolute;
+        left:17.2%;
+        top:0;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        background: url("img/num.png") no-repeat;
+        background-size: 87% auto;
+        background-position: 100% 0;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/num.png',sizingMethod='scale');
+    }
+    .business-wrap-item-num2{
+        position:absolute;
+        left:26.3%;
+        top:0;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        background: url("img/num.png") no-repeat;
+        background-size: 87% auto;
+        background-position: 100% 0;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/num.png',sizingMethod='scale');
+    }
+    .business-wrap-item-num3{
+        position:absolute;
+        left:43.6%;
+        top:0;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        background: url("img/num.png") no-repeat;
+        background-size: 87% auto;
+        background-position: 100% 0;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/num.png',sizingMethod='scale');
+    }
+    .business-wrap-item-num4{
+        position:absolute;
+        left:52.6%;
+        top:0;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        background: url("img/num.png") no-repeat;
+        background-size: 87% auto;
+        background-position: 100% 0;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/num.png',sizingMethod='scale');
+    }
+    .business-wrap-item-num5{
+        position:absolute;
+        left:69.6%;
+        top:0;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        background: url("img/num.png") no-repeat;
+        background-size: 87% auto;
+        background-position: 100% 0;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/num.png',sizingMethod='scale');
+    }
+    .business-wrap-item-num6{
+        position:absolute;
+        left:78.6%;
+        top:0;
+        text-align: center;
+        width: 8%;
+        height: 100%;
+        background: url("img/num.png") no-repeat;
+        background-size: 87% auto;
+        background-position: 100% 0;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/num.png',sizingMethod='scale');
+    }
+     /**
+    **不相等直接购买
+    */
+    .business-wrap-item-btn4{
+        position:absolute;
+        left:0;
+        top:53.8%;
+        text-align: center;
+        width: 100%;
+        height: 3%;
+    }
+    .btn4{
+        width:70%;
+        position:absolute;
+        left:15%;
+        top:0;
+    }
+     /**
+    **点击领取 
+    */
+    .business-wrap-item-btn5-1{
+        position:absolute;
+        left:14.5%;
+        top:72.8%;
+        text-align: center;
+        width: 30%;
+        height: 2%;
+    }
+    .btn5-1{
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .business-wrap-item-btn5-2{
+        position:absolute;
+        left:57%;
+        top:76%;
+        text-align: center;
+        width: 30%;
+        height: 2%;
+    }
+    .btn5-2{
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .business-wrap-item-btn5-3{
+        position:absolute;
+        left:20%;
+        top:82%;
+        text-align: center;
+        width: 30%;
+        height: 2%;
+    }
+    .btn5-3{
+        width:100%;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    </style>
+</head>
+<body>
+     <!--背景 -->
+	<div class="bgwrap">
+        <div class="bgwrap-bgimg-wrap">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_01.jpg" alt="">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_02.jpg" alt="">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_03.jpg" alt="">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_04.jpg" alt="">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_05.jpg" alt="">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_06.jpg" alt="">
+            <img class="bgwrap-bgimg-wrap-img" src="img/bg_07.jpg" alt="">
+        </div>
+        <!--业务包裹 -->
+        <div class="business-wrap">
+            <!--上线三周年 -->
+            <div class="business-wrap-item-btn1">
+                <img class="btn1" src="img/btn1.png" alt="">
+            </div>
+            <!--人气流-->
+            <div class="business-wrap-item-stream">
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius1" src="img/jd-1.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius2" src="img/jd-2.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius3" src="img/jd-3.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius4" src="img/jd-4.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius5" src="img/jd-2.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius6" src="img/jd-3.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius7" src="img/jd-4.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius8" src="img/jd-2.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius9" src="img/jd-3.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius10" src="img/jd-4.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius11" src="img/jd-2.png"/>
+                <img class="business-wrap-item-stream-radius business-wrap-item-stream-radius12" src="img/jd-5.png"/>
+            </div>
+            <!--当前人气值 -->
+            <div class="business-wrap-item-gbg1">
+                <img class="gbg1" src="img/gbg1.png" alt="">
+            </div>
+            <!--人气值 -->
+            <div class="business-wrap-item-gbg1-wrap">
+                <span class="business-wrap-item-gbg1-wrap-number font-resize"></span>
+            </div>
+            <!--我也来助力 -->
+            <div class="business-wrap-item-btn2">
+                <img class="btn2" src="img/btn2.png" alt="">
+            </div>
+            <!--邀请好友助力 -->
+            <div class="business-wrap-item-btn3">
+                <img class="btn3" src="img/btn3.png" alt="">
+            </div>
+            <!--倒计时 -->
+            <div class="business-wrap-item-num">
+
+                <div class="business-wrap-item-num1">
+                </div>
+                <div class="business-wrap-item-num2">
+                </div>
+                <div class="business-wrap-item-num3">
+                </div>
+                <div class="business-wrap-item-num4">
+                </div>
+                <div class="business-wrap-item-num5">
+                </div>
+                <div class="business-wrap-item-num6">
+                </div>
+            </div>
+                <!--不相等直接购买 -->
+            <div class="business-wrap-item-btn4">
+                <img class="btn4" src="img/btn4.png" alt="">
+            </div>
+            <!--点击领取 -->
+            <div class="business-wrap-item-btn5-1">
+                <img class="btn5-1" src="img/btn5.png" alt="">
+            </div>
+
+            <div class="business-wrap-item-btn5-2">
+                <img class="btn5-2" src="img/btn5.png" alt="">
+            </div>
+            <div class="business-wrap-item-btn5-3">
+                <img class="btn5-3" src="img/btn5.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+	
+
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+//业务全局变量
+var business={
+    //倒计时是否初始化，默认0没有,1为已经初始化
+    countDownIsInit:0,
+    //人数是否初始化，默认0没有
+    personNumber:0,
+    //倒计时初始化
+    initCountDown:function(date){
+        if(business.countDownIsInit==1){
+            throw new Error("多次初始化")
+        }
+       var time= business.countDown(date);
+       var h=time.h;
+       var m=time.m;
+       var s=time.s;
+        var ah=parseInt(h/10);
+        if(ah>=10){
+            throw new Error("异常")
+        }
+        var bh=h%10;
+        $(".business-wrap-item-num1").css("background-position","100% "+business.countDownNumber[ah]);
+        $(".business-wrap-item-num2").css("background-position","100% "+business.countDownNumber[bh]);
+        var am=parseInt(m/10);
+        var bm=m%10;
+        $(".business-wrap-item-num3").css("background-position","100% "+business.countDownNumber[am]);
+        $(".business-wrap-item-num4").css("background-position","100% "+business.countDownNumber[bm]);
+        var as=parseInt(s/10);
+        var bs=s%10;
+        $(".business-wrap-item-num5").css("background-position","100% "+business.countDownNumber[as]);
+        $(".business-wrap-item-num6").css("background-position","100% "+business.countDownNumber[bs]);
+        business.countDownIsInit=1;//记录已经初始化
+        business.countDownIterator(date);
+    },
+    //倒计时数字
+    countDownNumber:['0','11.1%','22.2%','33.3%','44.4%','55.5%','66.6%','77.7%','88.8%','99.9%'],
+    //倒计时 date结束时间
+    countDown:function(date){
+        var nowTime=new Date().getTime();
+        var endTime=new Date(date).getTime();
+        var resultTime=parseInt((endTime-nowTime)/1000);//精确到秒
+        var h = parseInt(resultTime/3600);//小时数
+        var m = resultTime%3600==0?0:parseInt((resultTime%3600)/60);//分钟数
+        var s = resultTime%3600==0?0:(resultTime%3600)%60==0?0:parseInt((resultTime%3600)%60);//秒数
+        var time={
+            h:h,
+            m:m,
+            s:s
+        }
+        return time;
+    },
+    //迭代器
+    countDownIterator:function(date){
+      setTimeout(function (){
+        business.countDownIsInit=0;
+       business.initCountDown(date);
+      },500);
+    },
+    //绑定人气值点击事件，personNumber初始化人数，number人数等级，element元素类
+    bindPersonNumberClick:function(personNumber,number,element){
+            $(element).click(function(){
+                if(personNumber>=number){
+                    if( $(element).attr("src")!="img/btn5-gary.png"){
+                    $(element).attr("src","img/btn5-gary.png")
+                    }
+                 }else{
+                     alert("人气值不够")
+                 }
+            });
+    },
+    //初始化人气值 ,personNumber
+    initPersonNumber:function(personNumber){
+        if(!(/^[0-9]*$/.test(personNumber))){
+            throw new Error("不是数字")
+        }
+        //赋值
+        var pn=personNumber<=10000?personNumber:personNumber<=100000000?parseFloat(personNumber/10000).toFixed(2)+'万':parseFloat(personNumber/100000000).toFixed(2)+'亿';
+        $(".business-wrap-item-gbg1-wrap-number").text(pn);
+        business.bindPersonNumberClick(personNumber,10000,".btn5-1");
+        business.bindPersonNumberClick(personNumber,100000,".btn5-2");
+        business.bindPersonNumberClick(personNumber,660000,".btn5-3");
+        business.personNumberRadius(personNumber);
+
+    },
+     //计算人气流 ,personNumber
+    personNumberRadius:function(personNumber){
+        //初始化不显示
+        for(var i=0;i<12;i++){
+            $(".business-wrap-item-stream-radius"+(i+1)).css("display","none");
+        }
+       //大于0,显示1
+        if(personNumber>0){
+            $(".business-wrap-item-stream-radius1").css("display","block");
+        }
+        //大于等于1000显示比例
+        if(personNumber>=1000){
+            $(".business-wrap-item-stream-radius2").css("display","block");
+            //宽度7%最大
+            var wscale1=7;
+            if(personNumber<10000){
+            var scale1=parseFloat(personNumber/10000).toFixed(2);
+            wscale1*=scale1;
+            }
+            $(".business-wrap-item-stream-radius2").css("width",wscale1+"%");
+        }
+        //大于等于10000
+        if(personNumber>=10000){
+            $(".business-wrap-item-stream-radius3").css("display","block");
+        }
+        //大于10000
+        if(personNumber>10000){
+            $(".business-wrap-item-stream-radius4").css("display","block");
+        }
+        //大于等于11000
+        if(personNumber>=11000){
+            $(".business-wrap-item-stream-radius5").css("display","block");
+
+            //宽度13%最大
+            var wscale2=13;
+            if(personNumber<100000){
+            var scale2=parseFloat(personNumber/100000).toFixed(2);
+            wscale2*=scale2;
+            }
+            $(".business-wrap-item-stream-radius5").css("width",wscale2+"%");
+        }
+        //大于等于100000
+        if(personNumber>=100000){
+            $(".business-wrap-item-stream-radius6").css("display","block");
+        }
+        //大于100000
+        if(personNumber>100000){
+            $(".business-wrap-item-stream-radius7").css("display","block");
+        }
+        //大于等于110000
+        if(personNumber>=110000){
+            $(".business-wrap-item-stream-radius8").css("display","block");
+
+            //宽度12%最大
+            var wscale3=12;
+            if(personNumber<100000){
+            var scale3=parseFloat(personNumber/660000).toFixed(2);
+            wscale3*=scale3;
+            }
+            $(".business-wrap-item-stream-radius8").css("width",wscale3+"%");
+        }
+        //大于等于660000
+        if(personNumber>=660000){
+            $(".business-wrap-item-stream-radius9").css("display","block");
+        }
+        //大于660000
+        if(personNumber>660000){
+            $(".business-wrap-item-stream-radius10").css("display","block");
+        }
+        //模拟最大100万大于等于1000000
+        if(personNumber>=1000000){
+            $(".business-wrap-item-stream-radius11").css("display","block");
+
+            //宽度7%最大
+            var wscale4=7;
+            if(personNumber<100000){
+            var scale4=parseFloat(personNumber/1000000).toFixed(2);
+            wscale4*=scale4;
+            }
+            $(".business-wrap-item-stream-radius11").css("width",wscale4+"%");
+        }
+        //大于等于1000000
+        if(personNumber>=1000000){
+            $(".business-wrap-item-stream-radius12").css("display","block");
+        }
+    }
+
+};
+//初始化倒计时，参数为最终日期
+business.initCountDown(new Date("2018/04/26 3:11:44"));
+//business.initCountDown(new Date());
+//初始化人气，参数为人气数。
+//business.initPersonNumber(0);
+//business.initPersonNumber(1123);
+//business.initPersonNumber(5123);
+//business.initPersonNumber(10000);
+//business.initPersonNumber(10002);
+//business.initPersonNumber(14002);
+//business.initPersonNumber(100000);
+//business.initPersonNumber(112345);
+//business.initPersonNumber(212345);
+//business.initPersonNumber(512345);
+//business.initPersonNumber(660000);
+business.initPersonNumber(760000);
+//business.initPersonNumber(112345678);
+
+//测试
+setInterval(function(){
+  //  business.initPersonNumber(parseInt(Math.random()*1000000));
+},1000)
+</script>
+
+</body>
+</html>
