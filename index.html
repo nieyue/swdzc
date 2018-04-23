@@ -52,8 +52,8 @@
     }
     @media screen and (max-width: 400px){
         .font-resize{
-            font-size:1.5rem !important;
-            margin-top:-1rem;
+            font-size:1.2rem !important;
+            margin-top:-0.8rem;
         }
     }
     /*
@@ -397,7 +397,7 @@
 </head>
 <body>
      <!--背景 -->
-	<div class="bgwrap">
+    <div class="bgwrap">
         <div class="bgwrap-bgimg-wrap">
             <img class="bgwrap-bgimg-wrap-img" src="img/bg_01.jpg" alt="">
             <img class="bgwrap-bgimg-wrap-img" src="img/bg_02.jpg" alt="">
@@ -478,8 +478,9 @@
         </div>
         
     </div>
-
-	
+    <div>
+   
+    
 
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <script> 
@@ -671,14 +672,15 @@ business.initCountDown(new Date("2018/04/26 3:11:44"));
 //business.initPersonNumber(100000);
 //business.initPersonNumber(112345);
 //business.initPersonNumber(212345);
+//business.initPersonNumber(325845);
 //business.initPersonNumber(512345);
 //business.initPersonNumber(660000);
-business.initPersonNumber(760000);
+//business.initPersonNumber(760000);
 //business.initPersonNumber(112345678);
 
 //测试
 
-;(function()
+/*;(function()
 {
 var a=1;
 var interval=setInterval(function(){
@@ -686,6 +688,35 @@ var interval=setInterval(function(){
     console.log(a)
     if(a<10){
         business.personNumber=parseInt(Math.random()*1000000);
+    business.initPersonNumber(business.personNumber);
+    }else{
+        clearInterval(interval)
+    }
+},1000);
+}
+)();*/
+//0到1亿的测试
+;(function()
+{
+var a=0;
+var interval=setInterval(function(){
+    if(a>10000000){
+    a+=10000000;
+    }else
+    if(a>1000000){
+    a+=1000000;
+    }else
+    if(a>100000){
+    a+=100000;
+    }else
+    if(a>10000){
+    a+=10000;
+    }else{     
+    a+=1000;
+    }
+    console.log(a)
+    if(a<100000000){
+        business.personNumber=a;
     business.initPersonNumber(business.personNumber);
     }else{
         clearInterval(interval)
