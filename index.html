@@ -2,6 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
     <meta name="viewport"
     content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 	<meta name="Copyright" content="Tencent" />
@@ -18,7 +19,6 @@
         margin:0;
         padding:0;
         list-style: none;
-        font-size:16px;
         /* font-size:62.5%; */
     }
     html,body{
@@ -30,7 +30,7 @@
         font-size:1.8rem !important;
         margin-top:-1.2rem;
     }
-
+/* 
     @media screen and (max-width: 700px){
         .font-resize{
             font-size:1.8rem !important;
@@ -55,7 +55,7 @@
             margin-top:-0.6rem;
         }
     }
-
+ */
 
     .font-resize1{
         font-size:1.5rem !important;
@@ -141,7 +141,9 @@
         left:0;
         top:0;
         width:100%;
-        font-size:0 ;
+        font-size:0;
+        display: block;
+        vertical-align: middle;
     }
    
     .bgwrap .bgwrap-bgimg-wrap .bgwrap-bgimg-wrap-img{
@@ -880,6 +882,17 @@ var interval=setInterval(function(){
 },1000);
 }
 )();
+$(window).resize(function(){
+//console.log($(document).width())
+if($(document).width()<640){   
+$("html").css("font-size",$(document).width()*16/640+"px");
+$("body").css("font-size",$(document).width()*16/640+"px");
+}else{
+    $("body").css("font-size",16+"px");
+}
+console.log($("html body").css("font-size"))
+
+});
 </script>
 
 </body>
